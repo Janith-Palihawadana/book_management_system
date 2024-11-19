@@ -33,4 +33,5 @@ Route::group([
     'prefix' => 'author'
 ], function (){
     Route::post('/get_all_author_list', [AuthController::class, 'getAllAuthorsList']);
+    Route::post('/edit_author', [AuthController::class , 'editAuthor']);
 });

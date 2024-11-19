@@ -53,4 +53,11 @@ class ValidationService
             'cover_image'=>'required|string|max:255',
         ]);
     }
+
+    public static function getAuthorValidator($request): \Illuminate\Validation\Validator
+    {
+        return Validator::make($request,[
+            'author_ref' => 'required|string|exists:users,user_ref',
+        ]);
+    }
 }

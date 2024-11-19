@@ -69,4 +69,14 @@ class AuthController extends Controller
         }
 
     }
+
+    public function editAuthor(Request $request)
+    {
+        try{
+            $validator = ValidationService::getAuthorValidator($request->all());
+
+            if ($validator->fails()) {
+                return response()->json($validator->errors(), 422);
+            }
+    }
 }

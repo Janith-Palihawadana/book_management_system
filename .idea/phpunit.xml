@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/bookstore_api/tests/Unit" />
         <option value="$PROJECT_DIR$/bookstore_api/tests/Feature" />
+        <option value="$PROJECT_DIR$/book_system_api/tests/Unit" />
+        <option value="$PROJECT_DIR$/book_system_api/tests/Feature" />
       </list>
     </option>
   </component>
